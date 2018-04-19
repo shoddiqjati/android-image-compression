@@ -12,4 +12,5 @@ object Constants {
     val DEGREE_180 = "180"
     val DEGREE_270 = "270"
     val BYTES = "bytes"
+    val IMAGE_DIR = "ImageCompress"
 }

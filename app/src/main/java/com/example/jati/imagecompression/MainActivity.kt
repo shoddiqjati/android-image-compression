@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             ActivityCompat.requestPermissions(this, PERMISSIONS.toTypedArray(), PERMISSIONS_REQ_CODE)
         } else {
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            val imageData = CreateImageUtils.createFile(this)
+            val imageData = CreateImageUtils.createFile()
             imagePath = imageData.path
             val photoUri = FileProvider.getUriForFile(this, "$packageName.provider", imageData.image)
             intent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri)
